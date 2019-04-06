@@ -15,7 +15,7 @@
     </sound>
 
     <model>
-      <path archive="y">Aircraft/Curtiss-P40/Models/p40.xml</path>
+      <path archive="y">Aircraft/Curtiss-P40/Models/P-40N.xml</path>
       <livery>
         <file type="string">default</file>
       </livery>
@@ -86,6 +86,9 @@
       <file>Aircraft/Curtiss-P40/Nasal/weapons.nas</file>
       <file>Aircraft/Curtiss-P40/Nasal/revi.nas</file>
     </guns>
+     <blackout>
+      <file>Aircraft/Curtiss-P40/Nasal/blackout.nas</file>
+    </blackout>
   </nasal>
 
 </PropertyList>
