@@ -66,9 +66,9 @@
  
   </sim>
 
-  <input include="Systems/p40-keyboard.xml"/>
+<!--  <input include="Systems/p40-keyboard.xml"/>
   
-  <controls include="Systems/controls.xml"/>
+  <controls include="Systems/controls.xml"/> -->
 
 
   <nasal>
