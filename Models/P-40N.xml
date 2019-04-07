@@ -356,7 +356,7 @@
   </model>
 
   <!-- Effets de tir -->
-  <!-- Gauche extÃ©rieur -->
+  <!-- Gauche extérieur -->
   <model>
     <path>Aircraft/Curtiss-P40/Models/Effects/guns/fire.xml</path>
     <offsets>
@@ -378,7 +378,7 @@
     </offsets>
   </model>
 
-  <!-- Gauche intÃ©rieur -->
+  <!-- Gauche intérieur -->
   <model>
     <path>Aircraft/Curtiss-P40/Models/Effects/guns/fire.xml</path>
     <offsets>
@@ -389,7 +389,7 @@
     </offsets>
   </model>
 
-  <!-- Droite intÃ©rieur -->
+  <!-- Droite intérieur -->
   <model>
     <path>Aircraft/Curtiss-P40/Models/Effects/guns/fire.xml</path>
     <offsets>
@@ -411,7 +411,7 @@
     </offsets>
   </model>
 
-  <!-- Droite extÃ©rieure -->
+  <!-- Droite extérieure -->
   <model>
     <path>Aircraft/Curtiss-P40/Models/Effects/guns/fire.xml</path>
     <offsets>
@@ -441,7 +441,7 @@
     </offsets>
   </model>
   
-  <!-- L'hÃ©lice --> 
+  <!-- L'hélice --> 
   <animation>
     <name>HeliceComplete</name>
     <object-name>helice</object-name>
@@ -450,7 +450,7 @@
     <object-name>propblur</object-name>
   </animation>
 
-  <!-- SÃ©lÃ©ction de l'objet visible en fonction des rpm -->
+  <!-- Séléction de l'objet visible en fonction des rpm -->
   <animation>
     <type>select</type>
     <object-name>propdisc</object-name>
@@ -628,9 +628,9 @@
       <entry><ind> 1 </ind><dep>   0 </dep></entry>
     </interpolation>
     <center>
-      <x-m> -1.90651 </x-m>
-      <y-m> -1.05547 </y-m>
-      <z-m> -0.51451 </z-m>
+      <x-m> -0.596245 </x-m>
+      <y-m> -1.25708 </y-m>
+      <z-m>  -1.8671 </z-m>
     </center>
     <axis>
       <x> 0 </x>
@@ -648,9 +648,9 @@
       <entry><ind> 1 </ind><dep>  0 </dep></entry>
     </interpolation>
     <center>
-      <x-m> -1.90651 </x-m>
-      <y-m> -1.05547 </y-m>
-      <z-m> -0.51451 </z-m>
+      <x-m> -0.596245 </x-m>
+      <y-m> -1.25708 </y-m>
+      <z-m>  -1.8671 </z-m>
     </center>
     <axis>
       <x> 0 </x>
@@ -675,9 +675,9 @@
       <entry><ind> 1 </ind><dep>   0 </dep></entry>
     </interpolation>
     <center>
-      <x-m> -1.90651 </x-m>
-      <y-m>  1.05547 </y-m>
-      <z-m> -0.51451 </z-m>
+      <x-m> -0.596245 </x-m>
+      <y-m>  1.25708 </y-m>
+      <z-m> -1.8671 </z-m>
     </center>
     <axis>
       <x> 0 </x>
@@ -695,9 +695,9 @@
       <entry><ind> 1 </ind><dep>   0 </dep></entry>
     </interpolation>
     <center>
-      <x-m> -1.90651 </x-m>
-      <y-m>  1.05547 </y-m>
-      <z-m> -0.51451 </z-m>
+      <x-m> -0.596245 </x-m>
+      <y-m>  1.25708 </y-m>
+      <z-m> -1.8671 </z-m>
     </center>
     <axis>
       <x> 0 </x>
@@ -721,9 +721,9 @@
       <entry><ind> 1 </ind><dep>   0 </dep></entry>
     </interpolation>
     <center>
-      <x-m> 2.45917 </x-m>
+      <x-m>  3.32614 </x-m>
       <y-m> 0.00000 </y-m>
-      <z-m> 0.12412 </z-m>
+      <z-m> -0.568733 </z-m>
     </center>
     <axis>
       <x> 0 </x>

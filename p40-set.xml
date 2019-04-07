@@ -4,14 +4,14 @@
 
   <sim>
 
-    <description>Curtiss P 40 (JSBsim)</description>
+    <description>Curtiss P 40 (YASim)</description>
     <author>Emmanuel BARANGER (3D/FDM), Tomcatter (Instruments)</author>
 
     <aircraft-version>0.1</aircraft-version>
     <status>Alpha</status>
 
-    <flight-model>jsb</flight-model>
-    <aero>P40</aero>
+    <flight-model>yasim</flight-model>
+    <aero>Systems/p40-yasim</aero>
 
     <rating>
       <FDM type="int">     3 </FDM>
