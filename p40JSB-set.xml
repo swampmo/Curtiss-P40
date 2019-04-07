@@ -58,15 +58,18 @@
       </generic>
     </multiplay>
     
-    <help include="help.xml"/>
 
-    <menubar include="../Dialogs/p40-menu.xml"/>
 
+    <help include="Systems/help.xml"/>
+
+    <menubar include="./Dialogs/p40-menu.xml"/> 
+ 
   </sim>
 
-  <input include="p40-keyboard.xml"/>
+<!--  <input include="Systems/p40-keyboard.xml"/>
   
-  <controls include="controls.xml"/>
+  <controls include="Systems/controls.xml"/> -->
+
 
   <nasal>
     <doors>
