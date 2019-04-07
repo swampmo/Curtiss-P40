@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="ISO-8859-1"?> 
+<?xml version="1.0"?>
 
-<PropertyList include="Systems/p40-base.xml">
+<PropertyList> 
 
   <sim>
 
-    <description>Curtiss P 40 (JSBsim)</description>
-    <author>Emmanuel BARANGER (3D/FDM), Tomcatter (Instruments)</author>
+    <description>Curtiss P 40N </description>
+    <author>Emmanuel BARANGER (3D), Tomcatter (Instruments) swamp (FDM)</author>
 
     <aircraft-version>0.1</aircraft-version>
     <status>Alpha</status>
@@ -13,29 +13,76 @@
     <flight-model>jsb</flight-model>
     <aero>P40</aero>
 
-    <rating>
-      <FDM type="int">     3 </FDM>
-      <systems type="int"> 1 </systems>
-      <cockpit type="int"> 2 </cockpit>
-      <model type="int">   4 </model>
-    </rating>
+    <fuel-fraction>0.8</fuel-fraction>
 
-    <tags>
-      <tag>fighter</tag>
-      <tag>1930s</tag>
-      <tag>1940s</tag>
-      <tag>1950s</tag>
-      <tag>ww2</tag>
-      <tag>piston</tag>
-      <tag>single-engine</tag>
-      <tag>tail-dragger</tag>
-      <tag>retractable-gear</tag>
-      <tag>propeller</tag>
-      <tag>variable-pitch</tag>
-      <tag>supercharged</tag>
-      <tag>seaplane</tag>
-    </tags>
+    <startup>
+     <splash-texture>Aircraft/Curtiss-P40/p40-splash.png</splash-texture>
+    </startup>
+
+    <sound>
+      <path>Aircraft/Curtiss-P40/Sounds/p40-sound.xml</path>
+    </sound>
+
+    <model>
+      <path archive="y">Aircraft/Curtiss-P40/Models/P-40N.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
+    <submodels> 
+      <serviceable type="bool">true</serviceable>
+      <path>Aircraft/Curtiss-P40/Models/Effects/guns/submodels.xml</path>
+    </submodels>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic> 
+        <int   n="0"  type="int">  0 </int>                                      <!--  0 immat -->
+        <int   n="1"  type="int">  0 </int>                                      <!--  1 immat -->
+        <int   n="2"  type="int">  0 </int>                                      <!--  2 immat -->
+        <int   n="3"  type="int">  0 </int>                                      <!--  3 immat -->
+        <int   n="4"  type="int">  0 </int>                                      <!--  4 immat -->
+        <int   n="5"  type="int">  0 </int>                                      <!--  5 immat -->
+        <int   n="6"  type="bool"> 1 </int>                                      <!--  6 smoke/bomb/torpedo -->
+        <int   n="7"  type="bool"> 0 </int>                                      <!--  7 Show radar -->
+        <int   n="8"  alias="/systems/electrical/outputs/nav-lights">  0 </int>  <!--  8 nav-lights -->
+        <int   n="9"  alias="/sim/model/lights/beacon/state">  false </int>      <!--  9 strobe-lights -->
+        <float n="0"  alias="/sim/model/door-positions/crew/position-norm"/>
+        <float n="1"  alias="/sim/model/door-positions/passenger/position-norm"/>
+        <float n="3"  alias="/position/altitude-ft"> 0 </float>                  <!-- altitude for Smoke/Trail -->
+        
+        <!-- For Bombable -->
+        <int type="int" n="10" alias="controls/armament/trigger">0</int>
+        <string n="9" type="string" />
+      </generic>
+    </multiplay>
+    
+    <help include="help.xml"/>
+
+    <menubar include="../Dialogs/p40-menu.xml"/>
 
   </sim>
+
+  <input include="p40-keyboard.xml"/>
+  
+  <controls include="controls.xml"/>
+
+  <nasal>
+    <doors>
+      <file>Aircraft/Curtiss-P40/Nasal/doors.nas</file>
+    </doors>
+    <p40>
+      <file>Aircraft/Curtiss-P40/Nasal/liveries.nas</file>
+      <file>Aircraft/Curtiss-P40/Nasal/light.nas</file>
+    </p40>
+    <guns>
+      <file>Aircraft/Curtiss-P40/Nasal/weapons.nas</file>
+      <file>Aircraft/Curtiss-P40/Nasal/revi.nas</file>
+    </guns>
+     <blackout>
+      <file>Aircraft/Curtiss-P40/Nasal/blackout.nas</file>
+    </blackout>
+  </nasal>
 
 </PropertyList>
