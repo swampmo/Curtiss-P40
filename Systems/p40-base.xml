@@ -70,8 +70,6 @@
 
   <consumables include="consumables.xml"/>
   
-  <yasim include="yasim.xml"/>
-
   <engines include="engines.xml"/>
 
   <nasal>
