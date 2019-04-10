@@ -63,7 +63,7 @@
    <vtailarea  unit="FT2">   21.29 </vtailarea>
    <vtailarm  unit="FT" >    11.00 </vtailarm>
    <location name="AERORP" unit="M">
-     <x> 0.818587 </x>
+     <x> 1.418587 </x>
      <y>     0.00 </y>
      <z>     0.00 </z>
    </location>
@@ -85,7 +85,7 @@
    <izz unit="SLUG*FT2">  10394.32 </izz>
    <emptywt unit="LBS" >   6070.00 </emptywt>
    <location name="CG" unit="M">
-     <x> 0.838987 </x>
+     <x> 1.38987 </x>
      <y>     0.00 </y>
      <z>   0 </z>
    </location>
@@ -93,7 +93,7 @@
     <description> 1665.18 LBS should bring model up to entered max weight </description>
     <weight unit="LBS"> 200 </weight>
     <location name="POINTMASS" unit="M">
-     <x> 0.838987 </x>
+     <x> 1.38987 </x>
      <y>     0.00 </y>
      <z>   0 </z>
    </location>
@@ -119,7 +119,7 @@
     <thruster file="elec-hyd">
      <sense> 1 </sense>
      <location unit="M">
-       <x>   -4.82743 </x>
+       <x>  -4.20658 </x>
        <y>     0.00 </y>
        <z>   0.347403 </z>
      </location>
@@ -133,7 +133,7 @@
 
   <tank type="FUEL" number="0">
      <location unit="M">
-     <x> 0.838987 </x>
+     <x> 1.38987 </x>
        <y>     0.00 </y>
        <z>   0 </z>
      </location>
@@ -142,7 +142,7 @@
   </tank>
   <tank type="FUEL" number="1">
      <location unit="M">
-     <x> 0.838987 </x>
+     <x> 1.38987 </x>
        <y>     0.00 </y>
        <z>   0 </z>
      </location>
@@ -156,9 +156,9 @@
 
   <contact type="BOGEY" name="TAIL">
     <location unit="M">
-      <x>   3.32614 </x>
+      <x> 3.35439 </x>
       <y>     0.00 </y>
-      <z>   -1.85954 </z>
+      <z> -0.771 </z>
     </location>
     <static_friction>  0.80 </static_friction>
     <dynamic_friction> 0.50 </dynamic_friction>

@@ -4,7 +4,7 @@
 
   <sim>
 
-    <description>Curtiss P 40 (JSBsim)</description>
+    <description>Curtiss P-40N (JSBsim)</description>
     <author>Emmanuel BARANGER (3D/FDM), Tomcatter (Instruments)</author>
 
     <aircraft-version>0.1</aircraft-version>
