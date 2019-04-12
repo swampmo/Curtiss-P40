@@ -857,7 +857,7 @@
   <animation>
     <type>translate</type>
     <object-name>RoueGauche</object-name>
-    <property>gear/gear[0]/compression-norm</property>
+    <property>gear/gear[2]/compression-norm</property>
     <interpolation>
       <entry><ind> 0 </ind><dep> 0.0 </dep></entry>
       <entry><ind> 1 </ind><dep> 0.3 </dep></entry>
