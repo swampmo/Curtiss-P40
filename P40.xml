@@ -58,12 +58,12 @@
    <wingspan  unit="FT" >    37.35 </wingspan>
    <wing_incidence unit="DEG"> 1.00 </wing_incidence>
    <chord     unit="FT" >    15.62 </chord>
-   <htailarea unit="FT2">    30.86 </htailarea>
+   <htailarea unit="FT2">    23.86 </htailarea>
    <htailarm  unit="FT" >    12.80 </htailarm>
    <vtailarea  unit="FT2">   21.29 </vtailarea>
    <vtailarm  unit="FT" >    11.00 </vtailarm>
    <location name="AERORP" unit="M">
-     <x> 1.418587 </x>
+     <x> 1.24 </x>
      <y>     0.00 </y>
      <z>     0.00 </z>
    </location>
@@ -85,7 +85,7 @@
    <izz unit="SLUG*FT2">  10394.32 </izz>
    <emptywt unit="LBS" >   6070.00 </emptywt>
    <location name="CG" unit="M">
-     <x> 1.38987 </x>
+     <x> 1.20 </x>
      <y>     0.00 </y>
      <z>   0 </z>
    </location>
@@ -93,7 +93,7 @@
     <description> 1665.18 LBS should bring model up to entered max weight </description>
     <weight unit="LBS"> 200 </weight>
     <location name="POINTMASS" unit="M">
-     <x> 1.38987 </x>
+     <x> 1.20 </x>
      <y>     0.00 </y>
      <z>   0 </z>
    </location>
@@ -104,9 +104,9 @@
 
    <engine file="Y-1710-99">
     <location unit="M">
-      <x>    -4.82743 </x>
+      <x>    -2.99717 </x>
       <y>     0.00 </y>
-      <z>     0.347403 </z>
+      <z>     0.05074 </z>
     </location>
     <orient unit="DEG">
       <pitch>     0.00 </pitch>
@@ -119,9 +119,9 @@
     <thruster file="elec-hyd">
      <sense> 1 </sense>
      <location unit="M">
-       <x>  -4.20658 </x>
+       <x>  -4.20157 </x>
        <y>     0.00 </y>
-       <z>   0.347403 </z>
+      <z>     0.05074 </z>
      </location>
      <orient unit="DEG">
        <pitch>     0.00 </pitch>
@@ -133,7 +133,7 @@
 
   <tank type="FUEL" number="0">
      <location unit="M">
-     <x> 1.38987 </x>
+     <x> 1.20 </x>
        <y>     0.00 </y>
        <z>   0 </z>
      </location>
@@ -142,7 +142,7 @@
   </tank>
   <tank type="FUEL" number="1">
      <location unit="M">
-     <x> 1.38987 </x>
+     <x> 1.20 </x>
        <y>     0.00 </y>
        <z>   0 </z>
      </location>
@@ -163,9 +163,10 @@
     <static_friction>  0.80 </static_friction>
     <dynamic_friction> 0.50 </dynamic_friction>
     <rolling_friction> 0.02 </rolling_friction>
-    <spring_coeff  unit="LBS/FT">     8810.00 </spring_coeff>
-    <damping_coeff unit="LBS/FT/SEC"> 4405.00 </damping_coeff>
-    <max_steer unit="DEG"> -30 </max_steer>
+   <spring_coeff unit="LBS/FT">      6000.00 </spring_coeff>
+   <damping_coeff unit="LBS/FT/SEC"> 1000.00 </damping_coeff>
+ <damping_coeff_rebound unit="LBS/FT/SEC"> 8000 </damping_coeff_rebound>
+    <max_steer unit="DEG"> -15 </max_steer>
     <brake_group> NONE </brake_group>
     <retractable> 1 </retractable>
   </contact>
@@ -179,10 +180,9 @@
     <static_friction>  0.80 </static_friction>
     <dynamic_friction> 0.50 </dynamic_friction>
     <rolling_friction> 0.02 </rolling_friction>
-    <spring_coeff  unit="LBS/FT">     8810.00 </spring_coeff>
-    <damping_coeff unit="LBS/FT/SEC"> 4405.00 </damping_coeff>
-    <max_steer unit="DEG">0</max_steer>
-    <brake_group> LEFT </brake_group>
+   <spring_coeff unit="LBS/FT">      8000.00 </spring_coeff>
+   <damping_coeff unit="LBS/FT/SEC"> 2000.00 </damping_coeff>
+ <damping_coeff_rebound unit="LBS/FT/SEC"> 9000 </damping_coeff_rebound>
     <retractable> 1 </retractable>
   </contact>
 
@@ -195,8 +195,9 @@
     <static_friction>  0.80 </static_friction>
     <dynamic_friction> 0.50 </dynamic_friction>
     <rolling_friction> 0.02 </rolling_friction>
-    <spring_coeff  unit="LBS/FT">     8810.00 </spring_coeff>
-    <damping_coeff unit="LBS/FT/SEC"> 4405.00 </damping_coeff>
+   <spring_coeff unit="LBS/FT">      8000.00 </spring_coeff>
+   <damping_coeff unit="LBS/FT/SEC"> 2000.00 </damping_coeff>
+ <damping_coeff_rebound unit="LBS/FT/SEC"> 9000 </damping_coeff_rebound>
     <max_steer unit="DEG">0</max_steer>
     <brake_group> RIGHT </brake_group>
     <retractable> 1 </retractable>
@@ -229,10 +230,10 @@
             <independentVar lookup="column">fcs/flap-pos-deg</independentVar>
             <tableData>
                      0.0     60.0
-              -0.48  0.000   0.000
-               0.00  0.057   0.153
-               0.12  0.260   0.693
-               0.24  0.000   0.000
+              -0.76  0.000   0.000
+               0.00  0.088   0.234
+               0.12  0.398   1.060
+               0.23  0.000   0.000
             </tableData>
           </table>
       </product>
@@ -640,7 +641,7 @@
            <property>metrics/Sw-sqft</property>
            <property>metrics/bw-ft</property>
            <property>fcs/rudder-pos-rad</property>
-           <value> 0.0100 </value>
+           <value> 0.0070 </value>
        </product>
     </function>
 
