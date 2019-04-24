@@ -28,7 +28,7 @@
   <ct_factor> 3 </ct_factor> <!-- set to match the number of blades -->
   <minpitch> 12 </minpitch>
   <maxpitch> 45 </maxpitch>
-  <minrpm> 2246.27 </minrpm>
+  <minrpm> 800 </minrpm>
   <maxrpm> 3000 </maxrpm>
 
  <!-- thrust coefficient as a function of advance ratio and blade angle -->
